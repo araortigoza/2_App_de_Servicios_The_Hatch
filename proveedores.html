@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profesionales - NEXA</title>
+  <link rel="stylesheet" href="css/proveedores.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="NEXA">
+        <span>NEXA</span>
+      </a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proveedores.html">Profesionales</a></li>
+        <li><a href="registro.html" class="botonNav">Registrarme</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Profesionales de servicios</h1>
+
+    <div class="filtros">
+      <label for="filtroCategoria">Filtrar por categoría</label>
+      <select id="filtroCategoria">
+        <option value="todas">Todas</option>
+      </select>
+      <button id="btnForzarError" type="button">Simular error</button>
+    </div>
+
+    <p id="estadoCargando">⏳ Cargando profesionales...</p>
+    <p id="estadoSinResultados" hidden>🚫 No hay profesionales disponibles para esta categoría.</p>
+    <p id="estadoError" hidden>❌ Ocurrió un error al cargar los profesionales. Intentá de nuevo más tarde.</p>
+
+    <ul id="listaProveedores"></ul>
+  </main>
+
+  <footer>
+    <p>NEXA - El punto de encuentro para tus servicios</p>
+  </footer>
+
+  <script src="js/proveedores.js"></script>
+</body>
+</html>
