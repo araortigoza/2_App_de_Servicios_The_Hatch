@@ -3,10 +3,8 @@ const estadoCargando = document.getElementById("estadoCargando");
 const estadoSinResultados = document.getElementById("estadoSinResultados");
 const estadoError = document.getElementById("estadoError");
 const filtroCategoria = document.getElementById("filtroCategoria");
-const btnForzarError = document.getElementById("btnForzarError");
 
 let todosLosProveedores = [];
-let forzarError = false;
 
 function mostrarEstado(estado) {
   estadoCargando.hidden = estado !== "cargando";
@@ -88,12 +86,6 @@ function cargarProveedores() {
   mostrarEstado("cargando");
 
   setTimeout(() => {
-    if (forzarError) {
-      mostrarEstado("error");
-      forzarError = false;
-      return;
-    }
-
     fetch("data/proveedores.json")
       .then((respuesta) => {
         if (!respuesta.ok) {
@@ -113,9 +105,5 @@ function cargarProveedores() {
 }
 
 filtroCategoria.addEventListener("change", filtrarPorCategoria);
-btnForzarError.addEventListener("click", () => {
-  forzarError = true;
-  cargarProveedores();
-});
 
 cargarProveedores();
