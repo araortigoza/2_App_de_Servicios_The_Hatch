@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "Thiago Ojeda",
+    "categoria": "Plomería",
+    "calificacion": 4.5,
+    "telefono": "+595981123456",
+    "descripcion": "Más de 15 años arreglando cañerías en Asunción."
+  },
+  {
+    "id": 2,
+    "nombre": "Walter Ortigoza",
+    "categoria": "Electricidad",
+    "calificacion": 4.8,
+    "telefono": "+595981234567",
+    "descripcion": "Instalaciones eléctricas certificadas."
+  },
+  {
+    "id": 3,
+    "nombre": "Nico Mendoza",
+    "categoria": "Gasista",
+    "calificacion": 4.2,
+    "telefono": "+595981345678",
+    "descripcion": "Instalación y revisión de garrafas y termotanques a gas."
+  },
+  {
+    "id": 4,
+    "nombre": "Llaves Ya",
+    "categoria": "Cerrajería",
+    "calificacion": 4.0,
+    "telefono": "+595981456789",
+    "descripcion": "Apertura de puertas y cambio de cerraduras las 24 horas."
+  },
+  {
+    "id": 5,
+    "nombre": "Fernando Gonzalez",
+    "categoria": "Pintura",
+    "calificacion": 4.6,
+    "telefono": "+595981567890",
+    "descripcion": "Pintura de interiores y exteriores, presupuesto sin cargo."
+  },
+  {
+    "id": 6,
+    "nombre": "Andrea Largosta",
+    "categoria": "Jardinería",
+    "calificacion": 4.3,
+    "telefono": "+595981678901",
+    "descripcion": "Mantenimiento de jardines, poda y diseño de espacios verdes."
+  },
+  {
+    "id": 7,
+    "nombre": "Aida Gomez",
+    "categoria": "Limpieza",
+    "calificacion": 4.7,
+    "telefono": "+595981789012",
+    "descripcion": "Limpieza profunda de hogares y oficinas, productos incluidos."
+  },
+  {
+    "id": 8,
+    "nombre": "José Franco",
+    "categoria": "Aire Acondicionado",
+    "calificacion": 4.4,
+    "telefono": "+595981890123",
+    "descripcion": "Instalación y mantenimiento de equipos de aire acondicionado."
+  },
+  {
+    "id": 9,
+    "nombre": "Sebastian Lopez",
+    "categoria": "Plomería",
+    "calificacion": 3.9,
+    "telefono": "+595981901234",
+    "descripcion": "Destapaciones y reparaciones urgentes, atiende fines de semana."
+  },
+  {
+    "id": 10,
+    "nombre": "Analia Ortigoza",
+    "categoria": "Electricidad",
+    "calificacion": 4.1,
+    "telefono": "+595982012345",
+    "descripcion": "Tableros eléctricos, cortocircuitos y mantenimiento preventivo."
+  },
+  {
+    "id": 11,
+    "nombre": "Gonzalo Britez",
+    "categoria": "Cerrajería",
+    "calificacion": 4.5,
+    "telefono": "+595982123456",
+    "descripcion": "Especialistas en cerraduras de seguridad y copias de llaves."
+  },
+  {
+    "id": 12,
+    "nombre": "Orlando Orue",
+    "categoria": "Jardinería",
+    "calificacion": 4.0,
+    "telefono": "+595982234567",
+    "descripcion": "Diseño de jardines verticales y mantenimiento mensual."
+  }
+]
