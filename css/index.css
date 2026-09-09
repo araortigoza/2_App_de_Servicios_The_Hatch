@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #2b2b2b;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8ddc9;
+  padding: 1rem 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+}
+
+.logo span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #17594c;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+header nav ul a {
+  color: #2b2b2b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav ul a:hover,
+header nav ul a:focus {
+  color: #2f9c82;
+}
+
+.botonNav {
+  background-color: #2f9c82;
+  color: #ffffff !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+}
+
+.botonNav:hover,
+.botonNav:focus {
+  background-color: #17594c;
+  color: #ffffff !important;
+}
+
+.hero {
+  background-color: #f0e4d3;
+  padding: 4rem 2rem;
+}
+
+.heroTexto {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  color: #17594c;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.botonesHero {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.botonPrimario {
+  display: inline-block;
+  background-color: #2f9c82;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.botonPrimario:hover,
+.botonPrimario:focus {
+  background-color: #17594c;
+}
+
+.botonSecundario {
+  display: inline-block;
+  background-color: transparent;
+  color: #17594c;
+  text-decoration: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 2px solid #17594c;
+}
+
+.botonSecundario:hover,
+.botonSecundario:focus {
+  background-color: #17594c;
+  color: #ffffff;
+}
+
+.comoFunciona {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.comoFunciona h2 {
+  color: #17594c;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.pasos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.paso {
+  background-color: #2f9c82;
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  text-align: left;
+}
+
+.numeroPaso {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+.paso h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.paso p {
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.ctaFinal {
+  background-color: #f0e4d3;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.ctaFinal h2 {
+  color: #17594c;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #8a8a8a;
+  font-size: 0.9rem;
+}
