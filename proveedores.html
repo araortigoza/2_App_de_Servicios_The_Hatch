@@ -24,10 +24,15 @@
     <h1>Profesionales de servicios</h1>
 
     <div class="filtros">
-      <label for="filtroCategoria">Filtrar por categoría</label>
-      <select id="filtroCategoria">
-        <option value="todas">Todas</option>
-      </select>
+      <label for="botonDropdown">Filtrar por categoría</label>
+      <div class="dropdown">
+        <button type="button" id="botonDropdown" class="dropdownBoton" aria-haspopup="listbox" aria-expanded="false">
+          <span id="textoSeleccionado">Todas</span>
+        </button>
+        <ul id="listaDropdown" class="dropdownLista" role="listbox" hidden>
+          <li role="option" data-valor="todas" class="dropdownOpcion seleccionada" tabindex="-1">Todas</li>
+        </ul>
+      </div>
     </div>
 
     <p id="estadoCargando">⏳ Cargando profesionales...</p>
