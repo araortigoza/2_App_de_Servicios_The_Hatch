@@ -61,17 +61,11 @@ header nav ul a:focus {
   color: #2f9c82;
 }
 
-.botonNav {
-  background-color: #2f9c82;
-  color: #ffffff !important;
-  padding: 0.5rem 1.2rem;
-  border-radius: 20px;
-}
-
-.botonNav:hover,
-.botonNav:focus {
-  background-color: #17594c;
-  color: #ffffff !important;
+.activo {
+  color: #17594c;
+  font-weight: 700;
+  border-bottom: 2px solid #17594c;
+  padding-bottom: 4px;
 }
 
 .hero {
@@ -117,23 +111,6 @@ header nav ul a:focus {
 .botonPrimario:hover,
 .botonPrimario:focus {
   background-color: #17594c;
-}
-
-.botonSecundario {
-  display: inline-block;
-  background-color: transparent;
-  color: #17594c;
-  text-decoration: none;
-  padding: 0.9rem 1.8rem;
-  border-radius: 30px;
-  font-weight: 600;
-  border: 2px solid #17594c;
-}
-
-.botonSecundario:hover,
-.botonSecundario:focus {
-  background-color: #17594c;
-  color: #ffffff;
 }
 
 .comoFunciona {
