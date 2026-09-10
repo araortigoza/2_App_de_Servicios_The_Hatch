@@ -2,9 +2,12 @@ const listaProveedores = document.getElementById("listaProveedores");
 const estadoCargando = document.getElementById("estadoCargando");
 const estadoSinResultados = document.getElementById("estadoSinResultados");
 const estadoError = document.getElementById("estadoError");
-const filtroCategoria = document.getElementById("filtroCategoria");
+const botonDropdown = document.getElementById("botonDropdown");
+const listaDropdown = document.getElementById("listaDropdown");
+const textoSeleccionado = document.getElementById("textoSeleccionado");
 
 let todosLosProveedores = [];
+let categoriaActual = "todas";
 
 function mostrarEstado(estado) {
   estadoCargando.hidden = estado !== "cargando";
@@ -22,13 +25,37 @@ function generarEstrellas(calificacion) {
   return estrellas;
 }
 
+function abrirDropdown() {
+  listaDropdown.hidden = false;
+  botonDropdown.setAttribute("aria-expanded", "true");
+}
+
+function cerrarDropdown() {
+  listaDropdown.hidden = true;
+  botonDropdown.setAttribute("aria-expanded", "false");
+}
+
+function seleccionarOpcion(opcion) {
+  const opciones = listaDropdown.querySelectorAll(".dropdownOpcion");
+  opciones.forEach((o) => o.classList.remove("seleccionada"));
+  opcion.classList.add("seleccionada");
+  textoSeleccionado.textContent = opcion.textContent;
+  categoriaActual = opcion.dataset.valor;
+  cerrarDropdown();
+  filtrarPorCategoria();
+}
+
 function cargarCategorias(proveedores) {
   const categorias = [...new Set(proveedores.map((p) => p.categoria))];
   categorias.forEach((categoria) => {
-    const option = document.createElement("option");
-    option.value = categoria;
-    option.textContent = categoria;
-    filtroCategoria.appendChild(option);
+    const opcion = document.createElement("li");
+    opcion.role = "option";
+    opcion.tabIndex = -1;
+    opcion.dataset.valor = categoria;
+    opcion.className = "dropdownOpcion";
+    opcion.textContent = categoria;
+    opcion.addEventListener("click", () => seleccionarOpcion(opcion));
+    listaDropdown.appendChild(opcion);
   });
 }
 
@@ -73,11 +100,10 @@ function renderizarProveedores(proveedores) {
 }
 
 function filtrarPorCategoria() {
-  const categoriaElegida = filtroCategoria.value;
-  if (categoriaElegida === "todas") {
+  if (categoriaActual === "todas") {
     renderizarProveedores(todosLosProveedores);
   } else {
-    const filtrados = todosLosProveedores.filter((p) => p.categoria === categoriaElegida);
+    const filtrados = todosLosProveedores.filter((p) => p.categoria === categoriaActual);
     renderizarProveedores(filtrados);
   }
 }
@@ -104,6 +130,53 @@ function cargarProveedores() {
   }, 800);
 }
 
-filtroCategoria.addEventListener("change", filtrarPorCategoria);
+botonDropdown.addEventListener("click", () => {
+  if (listaDropdown.hidden) {
+    abrirDropdown();
+  } else {
+    cerrarDropdown();
+  }
+});
+
+listaDropdown.querySelector(".dropdownOpcion").addEventListener("click", (evento) => {
+  seleccionarOpcion(evento.target);
+});
+
+document.addEventListener("click", (evento) => {
+  if (!evento.target.closest(".dropdown")) {
+    cerrarDropdown();
+  }
+});
+
+botonDropdown.addEventListener("keydown", (evento) => {
+  const opciones = Array.from(listaDropdown.querySelectorAll(".dropdownOpcion"));
+  const resaltada = listaDropdown.querySelector(".resaltada");
+  const indiceActual = resaltada ? opciones.indexOf(resaltada) : -1;
+
+  if (evento.key === "ArrowDown" || evento.key === "Enter" || evento.key === " ") {
+    evento.preventDefault();
+    if (listaDropdown.hidden) {
+      abrirDropdown();
+      opciones[0].classList.add("resaltada");
+    } else if (evento.key === "ArrowDown") {
+      if (resaltada) resaltada.classList.remove("resaltada");
+      const siguiente = opciones[(indiceActual + 1) % opciones.length];
+      siguiente.classList.add("resaltada");
+    } else if (resaltada) {
+      seleccionarOpcion(resaltada);
+    }
+  }
+
+  if (evento.key === "ArrowUp" && !listaDropdown.hidden) {
+    evento.preventDefault();
+    if (resaltada) resaltada.classList.remove("resaltada");
+    const anterior = opciones[(indiceActual - 1 + opciones.length) % opciones.length];
+    anterior.classList.add("resaltada");
+  }
+
+  if (evento.key === "Escape") {
+    cerrarDropdown();
+  }
+});
 
 cargarProveedores();
