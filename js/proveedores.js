@@ -82,16 +82,26 @@ function renderizarProveedores(proveedores) {
     const verMas = document.createElement("a");
     verMas.href = "detalle.html?id=" + proveedor.id;
     verMas.textContent = "Ver más";
+    verMas.className = "botonVerMas";
 
     const llamar = document.createElement("a");
     llamar.href = "tel:" + proveedor.telefono;
     llamar.textContent = "Llamar";
+    llamar.className = "botonLlamar";
+
+    const whatsapp = document.createElement("a");
+    whatsapp.href = "https://wa.me/" + proveedor.telefono.replace("+", "");
+    whatsapp.textContent = "WhatsApp";
+    whatsapp.target = "_blank";
+    whatsapp.rel = "noopener";
+    whatsapp.className = "botonWhatsapp";
 
     item.appendChild(nombre);
     item.appendChild(categoria);
     item.appendChild(calificacion);
     item.appendChild(verMas);
     item.appendChild(llamar);
+    item.appendChild(whatsapp);
 
     listaProveedores.appendChild(item);
   });
