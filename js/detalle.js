@@ -7,6 +7,7 @@ const categoriaProveedor = document.getElementById("categoriaProveedor");
 const calificacionProveedor = document.getElementById("calificacionProveedor");
 const descripcionProveedor = document.getElementById("descripcionProveedor");
 const llamarProveedor = document.getElementById("llamarProveedor");
+const whatsappProveedor = document.getElementById("whatsappProveedor");
 
 function generarEstrellas(calificacion) {
   const llenas = Math.round(calificacion);
@@ -28,6 +29,7 @@ function mostrarProveedor(proveedor) {
   calificacionProveedor.textContent = generarEstrellas(proveedor.calificacion) + " (" + proveedor.calificacion + ")";
   descripcionProveedor.textContent = proveedor.descripcion;
   llamarProveedor.href = "tel:" + proveedor.telefono;
+  whatsappProveedor.href = "https://wa.me/" + proveedor.telefono.replace("+", "");
 
   estadoCargando.hidden = true;
   detalleProveedor.hidden = false;
