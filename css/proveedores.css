@@ -170,7 +170,7 @@ label {
 }
 
 #listaProveedores li {
-  background-color: #ffffff;
+  background-color: #e8ddc9;
   border: 1px solid #e8ddc9;
   border-radius: 10px;
   padding: 1.5rem;
@@ -198,14 +198,19 @@ label {
   font-weight: 600;
 }
 
-#listaProveedores a:first-of-type {
+.botonVerMas {
   background-color: #ffffff;
   border: 2px solid #17594c;
   color: #17594c;
 }
 
-#listaProveedores a:last-of-type {
+.botonLlamar {
   background-color: #2f9c82;
+  color: #ffffff;
+}
+
+.botonWhatsapp {
+  background-color: #25d366;
   color: #ffffff;
 }
 
