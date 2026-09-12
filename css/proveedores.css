@@ -179,6 +179,13 @@ label {
   gap: 0.6rem;
 }
 
+.fotoProveedor {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 #listaProveedores h2 {
   font-size: 1.2rem;
   color: #17594c;
