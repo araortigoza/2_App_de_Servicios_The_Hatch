@@ -3,6 +3,7 @@ const estadoError = document.getElementById("estadoError");
 const detalleProveedor = document.getElementById("detalleProveedor");
 
 const nombreProveedor = document.getElementById("nombreProveedor");
+const fotoProveedor = document.getElementById("fotoProveedor");
 const categoriaProveedor = document.getElementById("categoriaProveedor");
 const calificacionProveedor = document.getElementById("calificacionProveedor");
 const descripcionProveedor = document.getElementById("descripcionProveedor");
@@ -24,6 +25,8 @@ function obtenerIdDeUrl() {
 }
 
 function mostrarProveedor(proveedor) {
+  fotoProveedor.src = proveedor.foto;
+  fotoProveedor.alt = proveedor.nombre;
   nombreProveedor.textContent = proveedor.nombre;
   categoriaProveedor.textContent = proveedor.categoria;
   calificacionProveedor.textContent = generarEstrellas(proveedor.calificacion) + " (" + proveedor.calificacion + ")";
