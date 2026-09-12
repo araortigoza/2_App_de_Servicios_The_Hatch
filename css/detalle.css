@@ -109,6 +109,14 @@ main {
   padding: 2rem;
 }
 
+#fotoProveedor {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
 #nombreProveedor {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
