@@ -70,6 +70,11 @@ function renderizarProveedores(proveedores) {
   proveedores.forEach((proveedor) => {
     const item = document.createElement("li");
 
+    const foto = document.createElement("img");
+    foto.src = proveedor.foto;
+    foto.alt = proveedor.nombre;
+    foto.className = "fotoProveedor";
+
     const nombre = document.createElement("h2");
     nombre.textContent = proveedor.nombre;
 
@@ -96,6 +101,7 @@ function renderizarProveedores(proveedores) {
     whatsapp.rel = "noopener";
     whatsapp.className = "botonWhatsapp";
 
+    item.appendChild(foto);
     item.appendChild(nombre);
     item.appendChild(categoria);
     item.appendChild(calificacion);
