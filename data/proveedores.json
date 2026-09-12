@@ -1,98 +1,98 @@
 [
   {
     "id": 1,
-    "nombre": "Thiago Ojeda",
-    "categoria": "Plomería",
-    "calificacion": 4.5,
-    "telefono": "+595981123456",
-    "descripcion": "Más de 15 años arreglando cañerías en Asunción."
+    "nombre": "Andrea Largosta",
+    "categoria": "Psicología",
+    "calificacion": 4.3,
+    "telefono": "+595981678901",
+    "descripcion": "Acompañamiento terapéutico enfocado en tu bienestar. Aunque a primera vista parezca formal, su risa contagiosa y calidez llenarán tus sesiones de luz y brillos radiantes."
   },
   {
     "id": 2,
+    "nombre": "Nicolas Mendoza",
+    "categoria": "Agrónomo",
+    "calificacion": 4.2,
+    "telefono": "+595981345678",
+    "descripcion": "Experto en evaluación de suelos y cultivos. Su amor por las plantas es tanto que no puede disimular su molestia si ve una tierra desnutrida; por eso trabajará sin descanso hasta dejar tu cultivo perfecto."
+  },
+  {
+    "id": 3,
+    "nombre": "Ara Ortigoza",
+    "categoria": "Psicología",
+    "calificacion": 5.0,
+    "telefono": "+595971265529",
+    "descripcion": "Psicóloga dedicada a guiarte hacia tu mejor versión. Con una escucha atenta y un cartel invisible que dice 'Tú puedess!', estará ahí para impulsarte a alcanzar cada una de tus metas."
+  },
+  {
+    "id": 4,
+    "nombre": "José Franco",
+    "categoria": "Aire Acondicionado",
+    "calificacion": 5.0,
+    "telefono": "+595981890123",
+    "descripcion": "Especialista en instalación y mantenimiento de aire acondicionado. Destaca por su amabilidad y calidez. Para él nunca hace suficiente frío; aunque lo escuches soltar un 'jetu'u' de vez en cuando, te garantizamos que tiene todo bajo control."
+  },
+  {
+    "id": 5,
     "nombre": "Walter Ortigoza",
     "categoria": "Electricidad",
     "calificacion": 4.8,
     "telefono": "+595981234567",
-    "descripcion": "Instalaciones eléctricas certificadas."
-  },
-  {
-    "id": 3,
-    "nombre": "Nico Mendoza",
-    "categoria": "Gasista",
-    "calificacion": 4.2,
-    "telefono": "+595981345678",
-    "descripcion": "Instalación y revisión de garrafas y termotanques a gas."
-  },
-  {
-    "id": 4,
-    "nombre": "Llaves Ya",
-    "categoria": "Cerrajería",
-    "calificacion": 4.0,
-    "telefono": "+595981456789",
-    "descripcion": "Apertura de puertas y cambio de cerraduras las 24 horas."
-  },
-  {
-    "id": 5,
-    "nombre": "Fernando Gonzalez",
-    "categoria": "Pintura",
-    "calificacion": 4.6,
-    "telefono": "+595981567890",
-    "descripcion": "Pintura de interiores y exteriores, presupuesto sin cargo."
+    "descripcion": "Técnico electricista certificado. Con sus gafas de protección y la mejor energía, le devuelve el brillo y la chispa a las conexiones de tu hogar sin despeinarse."
   },
   {
     "id": 6,
-    "nombre": "Andrea Largosta",
-    "categoria": "Jardinería",
-    "calificacion": 4.3,
-    "telefono": "+595981678901",
-    "descripcion": "Mantenimiento de jardines, poda y diseño de espacios verdes."
+    "nombre": "Thiago Ojeda",
+    "categoria": "Plomería",
+    "calificacion": 4.5,
+    "telefono": "+595981123456",
+    "descripcion": "Más de 15 años de experiencia solucionando cualquier fuga o cañería. Siempre llega puntual con su mochila llena de herramientas irradiando amabilidad."
   },
   {
     "id": 7,
-    "nombre": "Aida Gomez",
-    "categoria": "Limpieza",
-    "calificacion": 4.7,
-    "telefono": "+595981789012",
-    "descripcion": "Limpieza profunda de hogares y oficinas, productos incluidos."
-  },
-  {
-    "id": 8,
-    "nombre": "José Franco",
-    "categoria": "Aire Acondicionado",
-    "calificacion": 4.4,
-    "telefono": "+595981890123",
-    "descripcion": "Instalación y mantenimiento de equipos de aire acondicionado."
-  },
-  {
-    "id": 9,
     "nombre": "Sebastian Lopez",
-    "categoria": "Plomería",
-    "calificacion": 3.9,
-    "telefono": "+595981901234",
-    "descripcion": "Destapaciones y reparaciones urgentes, atiende fines de semana."
-  },
-  {
-    "id": 10,
-    "nombre": "Analia Ortigoza",
     "categoria": "Electricidad",
     "calificacion": 4.1,
     "telefono": "+595982012345",
-    "descripcion": "Tableros eléctricos, cortocircuitos y mantenimiento preventivo."
+    "descripcion": "Técnico electricista experto en soluciones rápidas y seguras. Es súper atento: llevará una refrescante bebida para ti y para él para compartir una buena charla mientras deja tus instalaciones en perfecto estado."
+  },
+  {
+    "id": 8,
+    "nombre": "Analia Ortigoza",
+    "categoria": "Limpieza",
+    "calificacion": 4.7,
+    "telefono": "+595981789012",
+    "descripcion": "Especialista en orden impecable. Transforma cualquier lugar con su energía contagiosa; pon tu lista de reproducción favorita y verás cómo deja tu casa brillante casi al ritmo de la música."
+  },
+  {
+    "id": 9,
+    "nombre": "Araceli Ortigoza",
+    "categoria": "Pintura",
+    "calificacion": 4.6,
+    "telefono": "+595981567890",
+    "descripcion": "Especialista en color y renovación de ambientes. Combina técnica y estilo para darle vida a tu hogar. Su pasión por el detalle y su toque artístico le devolverán la magia a tus espacios, convertirá tu lugar favorito en una galería llena de vida."
+  },
+  {
+    "id": 10,
+    "nombre": "Ñeca Oviedo",
+    "categoria": "Jardinería",
+    "calificacion": 4.5,
+    "telefono": "+595982123456",
+    "descripcion": "Servicio de jardinería lleno de dedicación y cariño. Trata a cada planta como si fuera única para lograr que tus jardines florezcan con vitalidad y llenen tus días de un ambiente más feliz."
   },
   {
     "id": 11,
-    "nombre": "Gonzalo Britez",
-    "categoria": "Cerrajería",
-    "calificacion": 4.5,
-    "telefono": "+595982123456",
-    "descripcion": "Especialistas en cerraduras de seguridad y copias de llaves."
+    "nombre": "Thiago Caceres",
+    "categoria": "Arquitectura",
+    "calificacion": 3.9,
+    "telefono": "+595981901234",
+    "descripcion": "Arquitecto enfocado en la transformación de interiores y exteriores. Con un toque único de curiosidad y la mejor disposición, indagará en cada detalle de tus gustos hasta diseñar el ambiente perfecto para ti."
   },
   {
     "id": 12,
-    "nombre": "Orlando Orue",
-    "categoria": "Jardinería",
+    "nombre": "Karen Oviedo",
+    "categoria": "Niñera",
     "calificacion": 4.0,
     "telefono": "+595982234567",
-    "descripcion": "Diseño de jardines verticales y mantenimiento mensual."
+    "descripcion": "Niñera dedicada al bienestar y entretenimiento de tus hijos. Su amor por los niños y su energía positiva harán que cada día sea una aventura segura y llena de risas."
   }
 ]
