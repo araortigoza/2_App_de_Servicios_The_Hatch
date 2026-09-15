@@ -81,4 +81,4 @@ Para generarla: abrir el sitio desplegado en Chrome, presionar F12, ir a la pest
 
 ## Registro de cambios
 
-Las pruebas con usuarios y las mejoras aplicadas a partir de su feedback están documentadas en [CHANGELOG.md](CHANGELOG.md).
+Las pruebas con usuarios y las mejoras aplicadas a partir de su feedback están documentadas en [CHANGELOG.md](CHANGElog.md).
